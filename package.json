@@ -9,7 +9,9 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
+    "setupFiles": ["./jest.setup.js"],
     "collectCoverageFrom": [
+      "script/seat-booking-app.js",
       "script/Service.js"
     ],
     "coverageThreshold": {
@@ -24,6 +26,9 @@
       "text",
       "lcov",
       "html"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
     ]
   },
   "author": "Damian Zienke",
