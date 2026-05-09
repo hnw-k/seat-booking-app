@@ -662,3 +662,15 @@ bookSeatsBtn.addEventListener('click', () => {
     showingRoom1.cacheServices();
     updateBlockedState();
 });
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        SeatBookingApp,
+        Service,
+        Sector,
+        showingRoom1,
+        renderBookedSeats,
+        localStorageSpace,
+        initializeApp
+    };
+}
